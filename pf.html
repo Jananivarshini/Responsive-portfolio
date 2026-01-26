@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Er.Janani AS</title>
+    <link rel="stylesheet" href="pf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Er.<span>Janani</span> A.S</a>
+        <!--Hamburger-->
+        <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars" style="color: #ff1f1f;"></i></div>
+        <nav class="navbar" id="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="contact">Contact Me</a>
+        </nav>
+      
+    </header>
+    <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  menuToggle.onclick = () => {
+    navbar.classList.toggle("active");
+  };
+</script>
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Janani <br></span>a Frontend Developer</h1>
+            <p>I am an aspiring Front-End Developer with hands-on experience in HTML, CSS, JavaScript, and React.js.
+                 I focus on building responsive, clean, and user-friendly web interfaces.
+                 I am eager to start my career in the IT industry and continuously improve my skills by learning modern web technologies.</p>
+        
+        <div class="btn-box">
+            <button class="btn-1">Hire Me</button>
+            <button class="btn-2">My CV</button>
+        </div>
+        </div>
+        <div class="img-box">
+            <img src="pf-img/janani.jpg" alt="">
+        </div>
+    </section>
+   <section class="about" id="About">
+   
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend <span>Developer</span></h3>
+        
+        <p>I am a UI/UX Designer and Web Developer with experience in web design and React.js development. 
+            I focus on creating intuitive, user-friendly interfaces and responsive websites that provide a smooth user experience. 
+            I enjoy turning ideas and designs into functional, visually appealing web applications using modern technologies.
+            I am continuously improving my skills and staying updated with the latest design and development trends to build high-quality digital products.</p>
+        <a href="https://www.linkedin.com/in/jananiashok16/" class="btn-2" id="btn-center">Know More</a>
+        </div>
+   </section>
+  
+
+<section class="skills-section" id="skills">
+  <h2 class="main-title">My <span>Skills</span></h2>
+
+  <div class="skills-grid">
+
+    <!-- Front End -->
+    <div class="skill-box">
+      <h3>Front End Development</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-box">
+      <h3>Tools & Version Control</h3>
+      <ul>
+        <li>GitHub</li>
+        <li>VS Code</li>
+        <li>Docker</li>
+      </ul>
+    </div>
+
+    <!-- UI / UX -->
+    <div class="skill-box">
+      <h3>UI / UX Design</h3>
+      <ul>
+        <li>Figma</li>
+        <li>Canva</li>
+        <li>Adobe XD</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="projects" id="projects">
+  <h2 class="section-title">My <span>Projects</span></h2>
+
+  <div class="project-box">
+    <a id="projectLink" href="#" target="_blank">
+      <img id="projectImage" src="pf-img/ind.jpeg" alt="Project Image">
+    </a>
+
+    <h3 id="projectTitle">Portfolio Website</h3>
+    <p id="projectDesc">
+      Responsive personal portfolio built using HTML, CSS and JavaScript.
+    </p>
+  </div>
+</section>
+
+
+<script>
+  const projects = [
+    {
+      title: "Portfolio Website",
+      desc: "Responsive personal portfolio built using HTML, CSS and JavaScript.",
+      img: "pf-img/ind.jpeg",
+      link: "https://github.com/Jananivarshini"
+    },
+    {
+      title:"Restaurant Website",
+      desc:"Responsive Restaurant website built using html and css",
+      img:"pf-img/rest.png",
+      link: "https://github.com/Jananivarshini"
+    
+    },
+    {
+      title: "To-Do App",
+      desc: "Task management app with add, delete and local storage features.",
+      img: "project3.jpg",
+      link: "https://github.com/Jananivarshini"
+    },
+    {
+      title: "Calculator",
+      desc: "Simple calculator built using JavaScript with clean UI.",
+      img: "project4.jpg",
+      link: "https://github.com/Jananivarshini"
+    }
+  ];
+
+  let index = 0;
+
+  function changeProject() {
+    const image = document.getElementById("projectImage");
+    const title = document.getElementById("projectTitle");
+    const desc = document.getElementById("projectDesc");
+    const link = document.getElementById("projectLink");
+
+    image.src = projects[index].img;
+    title.innerText = projects[index].title;
+    desc.innerText = projects[index].desc;
+    link.href = projects[index].link;
+
+    index = (index + 1) % projects.length;
+  }
+
+  setInterval(changeProject, 5000);
+</script>
+
+
+
+<section class="profile-section" id="education">
+  <h2 class="edu-title">Education and <span>Experience</span></h2>
+
+  <div class="profile-grid">
+
+    <!-- Education -->
+    <div class="profile-card">
+      <h3>Education</h3>
+      <p class="title">Bachelor of Engineering</p>
+      <p>Electronics and Communication Engineering</p>
+      <p>Rohini College of Engineering and Technology</p>
+      <p class="highlight">CGPA: 8.01</p>
+    </div>
+
+    <!-- Internship -->
+    <div class="profile-card">
+      <h3>Internship</h3>
+      <p class="title">Web Development Intern</p>
+      <p>Iconic Software Solutions</p>
+      <p>Tirunelveli</p>
+    </div>
+
+    <!-- Certifications -->
+    <div class="profile-card">
+      <h3>Certifications</h3>
+      <p class="title">UI / UX with React</p>
+      <p>3 Months Professional Course</p>
+    </div>
+
+  </div>
+</section>
+    <section class="contact-section" id="contact">
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+    <p class="tagline">Let’s build something amazing together 🚀</p>
+
+    <div class="contact-item">
+      📧 <span>jananivarshini2003@gmail.com</span>
+    </div>
+
+    <div class="contact-item">
+      📞 <span>+91 9500379519</span>
+    </div>
+
+    <div class="contact-item">
+      🔗 <span><a href="https://www.linkedin.com/in/jananiashok16/">jananiashok16</a></span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
