@@ -75,6 +75,7 @@ span{
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
+    
 }
 .home-content{
     max-width: 800px;
@@ -426,7 +427,7 @@ span{
 /* Contact Section */
 .contact-section {
   min-height: 400px;
-  background: black;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -551,4 +552,42 @@ span{
   .navbar.active {
     display: flex;
   }
+}
+/* Default hidden */
+.home-content > * {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* FINAL visible state */
+.home.show .fade-top,
+.home.show .fade-left,
+.home.show .fade-right,
+.home.show .fade-bottom {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Different directions */
+.fade-top {
+  transform: translateY(-50px);
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-right {
+  transform: translateX(60px);
+}
+
+.fade-bottom {
+  transform: translateY(50px);
+}
+.fade-top { transition-delay: 0.2s; }
+.fade-left { transition-delay: 0.4s; }
+.fade-right { transition-delay: 0.6s; }
+.fade-bottom { transition-delay: 0.8s; }
+.img{
+  float: right;
 }

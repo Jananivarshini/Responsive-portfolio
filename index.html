@@ -23,30 +23,22 @@
         </nav>
       
     </header>
-    <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const navbar = document.getElementById("navbar");
-
-  menuToggle.onclick = () => {
-    navbar.classList.toggle("active");
-  };
-</script>
+   
     <section class="home" id="Home">
         <div class="home-content">
-            <h3>Hi</h3>
-            <h1>I'm <span>Janani <br></span>a Frontend Developer</h1>
-            <p>I am an aspiring Front-End Developer with hands-on experience in HTML, CSS, JavaScript, and React.js.
+            <h3 class="fade-top">Hi</h3>
+            <h1 class="fade-left">I'm <span>Janani <br></span>a Frontend Developer</h1>
+            <p class="fade-right">I am an aspiring Front-End Developer with hands-on experience in HTML, CSS, JavaScript, and React.js.
                  I focus on building responsive, clean, and user-friendly web interfaces.
                  I am eager to start my career in the IT industry and continuously improve my skills by learning modern web technologies.</p>
         
-        <div class="btn-box">
+        <div class="btn-box fade-bottom">
             <button class="btn-1">Hire Me</button>
             <button class="btn-2">My CV</button>
+            
         </div>
         </div>
-       <!-- <div class="img-box">
-            <img src="pf-img/janani.jpg" alt="">
-        </div>-->
+       
     </section>
    <section class="about" id="About">
    
@@ -118,57 +110,6 @@
   </div>
 </section>
 
-
-<script>
-  const projects = [
-    {
-      title: "Portfolio Website",
-      desc: "Responsive personal portfolio built using HTML, CSS and JavaScript.",
-      img: "pf-img/ind.jpeg",
-      link: "https://github.com/Jananivarshini"
-    },
-    {
-      title:"Restaurant Website",
-      desc:"Responsive Restaurant website built using html and css",
-      img:"pf-img/rest.png",
-      link: "https://github.com/Jananivarshini"
-    
-    },
-    {
-      title: "To-Do App",
-      desc: "Task management app with add, delete and local storage features.",
-      img: "pf-img/todolist.png",
-      link: "https://github.com/Jananivarshini"
-    },
-    {
-      title: "Dictionary",
-      desc: "Simple Dictionary built using JavaScript with clean UI.",
-      img: "pf-img/dict.png",
-      link: "https://github.com/Jananivarshini"
-    }
-  ];
-
-  let index = 0;
-
-  function changeProject() {
-    const image = document.getElementById("projectImage");
-    const title = document.getElementById("projectTitle");
-    const desc = document.getElementById("projectDesc");
-    const link = document.getElementById("projectLink");
-
-    image.src = projects[index].img;
-    title.innerText = projects[index].title;
-    desc.innerText = projects[index].desc;
-    link.href = projects[index].link;
-
-    index = (index + 1) % projects.length;
-  }
-
-  setInterval(changeProject, 5000);
-</script>
-
-
-
 <section class="profile-section" id="education">
   <h2 class="edu-title">Education and <span>Experience</span></h2>
 
@@ -218,9 +159,7 @@
     </div>
   </div>
 </section>
-
-
-
+<script src="pf.js"></script>
 
 
 </body>
