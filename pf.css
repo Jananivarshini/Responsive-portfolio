@@ -109,11 +109,6 @@ span{
     transition: 0.3s ease;
     cursor: pointer;
 }
-.btn-1:hover{
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-}
 .btn-2{
     padding: 15px 28px;
     background-color: orangered;
@@ -131,12 +126,13 @@ span{
 
 .btn-2:hover{
     background-color: white;
-    color: orangered;
+    color: orangered;}
+.btn-1:hover{
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
 }
-.img-box img{
-    border-radius: 50%;
-    width: 300px;
-}
+
 ::-webkit-scrollbar{
     width: 15px;
 }
