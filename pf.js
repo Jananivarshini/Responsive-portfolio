@@ -51,6 +51,6 @@ const menuToggle = document.getElementById("menu-toggle");
     index = (index + 1) % projects.length;
   }
 
-  setInterval(changeProject, 5000);
+  setInterval(changeProject, 2000);
   const homeSection = document.querySelector(".home");
 const homeLink = document.getElementById("homeLink");
